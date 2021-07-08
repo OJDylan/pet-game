@@ -19,7 +19,8 @@ body {
 /* Stats */
 .stats-section {
   text-align: center;
-  width: 400px;
+  /* width: 400px; already over the screen*/
+  width: auto;
   margin: 0 auto;
   padding-top: 5px;
 }
