@@ -111,7 +111,7 @@ $(document).ready(() => {
     }
 
     if (countMax === 3) {
-      $(".pet").attr("src", "/assets/miltank-happy2.png");
+      $(".pet").attr("src", "miltank-happy2.png");
       $(".pet").attr("style", "width:10rem");
       $(".alert").attr("style", "display: visible");
     }
