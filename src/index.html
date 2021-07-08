@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" async></script>
+    <script
+      src="https://kit.fontawesome.com/e4addfdf3b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Virtual Pet Game</title>
+  </head>
+  <body>
+    <div class="alert" style="display: none">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <strong>Congrats!</strong><br /><br />
+      You have earned 200 points for making your pet happy!
+    </div>
+    <div class="main-content">
+      <!-- Stat Section -->
+      <div class="stats-section">
+        <table>
+          <tr>
+            <td class="stat-name">Happiness:</td>
+            <td class="stat-value">
+              <table>
+                <tr>
+                  <td class="level low-level" id="happiness-low-level"></td>
+                  <td class="level med-level" id="happiness-med-level"></td>
+                  <td class="level high-level" id="happiness-high-level"></td>
+                </tr>
+              </table>
+              <span id="happiness"></span><span>/100</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="stat-name">Hunger:</td>
+            <td class="stat-value">
+              <table>
+                <tr>
+                  <td class="level low-level" id="hunger-low-level"></td>
+                  <td class="level med-level" id="hunger-med-level"></td>
+                  <td class="level high-level" id="hunger-high-level"></td>
+                </tr>
+              </table>
+              <span id="hunger"></span><span>/100</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="stat-name">Cleanliness:</td>
+            <td class="stat-value">
+              <table>
+                <tr>
+                  <td class="level low-level" id="cleanliness-low-level"></td>
+                  <td class="level med-level" id="cleanliness-med-level"></td>
+                  <td class="level high-level" id="cleanliness-high-level"></td>
+                </tr>
+              </table>
+              <span id="cleanliness"></span><span>/100</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Pet Section -->
+      <div class="pet-section">
+        <img class="pet" src="/assets/miltank.png" alt="pet" />
+      </div>
+
+      <!-- Buttons Section -->
+      <div class="buttons-section">
+        <button class="button" id="play-button">
+          <i class="fas fa-futbol"></i> Play
+        </button>
+        <button class="button" id="eat-button">
+          <i class="fas fa-utensils"></i> Eat
+        </button>
+        <button class="button" id="clean-button">
+          <i class="fas fa-shower"></i> Clean
+        </button>
+      </div>
+
+      <!-- Additional Info Section -->
+      <div class="attempts-section">
+        <span>Attempts</span>
+        <span id="attempts"></span><span>/10</span>
+      </div>
+    </div>
+  </body>
+</html>

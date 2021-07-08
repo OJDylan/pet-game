@@ -1,0 +1,97 @@
+/* Main */
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: black solid;
+  /* padding: 20px; */
+}
+
+/* Content */
+.main-content {
+  margin: 0 auto;
+  background-image: url("/assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: 41rem; /* change this according to the viewport size */
+}
+
+/* Stats */
+.stats-section {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.stat-name {
+  text-align: left;
+  font-weight: bold;
+}
+
+.stat-value {
+  text-align: right;
+}
+
+.level {
+  height: 7px;
+  border: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+td {
+  width: 200px;
+}
+
+/* Pet */
+
+/* Buttons */
+.buttons-section {
+  padding: 10px;
+}
+
+.button {
+  background-color: #11999e; /* Background */
+  border: 0; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 20px;
+  width: 100px;
+}
+
+.fas {
+  margin-right: 5px;
+}
+
+/* Additional Sections */
+.attempts-section {
+  color: black;
+  font-weight: bold;
+}
+
+/* Alert */
+.alert {
+  width: 30%;
+  height: 100px;
+  padding: 20px;
+  background-color: #11999e;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  border: black solid;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
